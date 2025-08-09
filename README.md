@@ -26,11 +26,11 @@ Déploiement avec Kubernetes
 │   │   ├── app.py
 │   │   ├── Dockerfile
 │   │   ├── model_v2.pkl
-│   │   ├── model_v3.pkl
 │   │   └── requirements.txt
 │   └── v0.3.0/
 │       ├── app.py
 │       ├── Dockerfile
+|       ├── model_v3.pkl
 │       └── requirements.txt
 ```
 
