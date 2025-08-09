@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlops-client
+  labels:
+    app: mlops-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlops-client
+  template:
+    metadata:
+      labels:
+        app: mlops-client
+    spec:
+      containers:
+      - name: mlops-client
+        image: mlops-client:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8501
+        
