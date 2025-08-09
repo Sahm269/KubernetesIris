@@ -1,9 +1,38 @@
 # KubernetesIris
 
 Déploiement avec Kubernetes
-
 ## Architecture des dossiers
-├── client/ │ ├── app.py │ ├── Dockerfile │ ├── requirements.txt │ └── k8s/ │ ├── deployment.yaml │ └── service.yaml ├── server/ │ ├── model.pkl │ ├── train.ipynb │ ├── k8s/ │ │ ├── deployment.yaml │ │ └── service.yaml │ ├── v0.1.0/ │ │ ├── app.py │ │ ├── Dockerfile │ │ ├── model_v1.pkl │ │ └── requirements.txt │ ├── v0.2.0/ │ │ ├── app.py │ │ ├── Dockerfile │ │ ├── model_v2.pkl │ │ ├── model_v3.pkl │ │ └── requirements.txt │ └── v0.3.0/ │ ├── app.py │ ├── Dockerfile │ └── requirements.txt
+
+```plaintext
+├── client/
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── k8s/
+│       ├── deployment.yaml
+│       └── service.yaml
+├── server/
+│   ├── model.pkl
+│   ├── train.ipynb
+│   ├── k8s/
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── v0.1.0/
+│   │   ├── app.py
+│   │   ├── Dockerfile
+│   │   ├── model_v1.pkl
+│   │   └── requirements.txt
+│   ├── v0.2.0/
+│   │   ├── app.py
+│   │   ├── Dockerfile
+│   │   ├── model_v2.pkl
+│   │   ├── model_v3.pkl
+│   │   └── requirements.txt
+│   └── v0.3.0/
+│       ├── app.py
+│       ├── Dockerfile
+│       └── requirements.txt
+```
 
 ## Instructions pour lancer l'application
 
